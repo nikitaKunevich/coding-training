@@ -1,3 +1,10 @@
+'''
+Source: Leetcode
+628. Maximum Product of Three Numbers
+'''
+
+from typing import List
+
 # O(n) time | O(n) space
 class SolutionWSortedArray:
     def maximumProduct(self, nums: List[int]) -> int:
