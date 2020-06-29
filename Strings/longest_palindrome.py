@@ -1,6 +1,5 @@
 # O(n^2) time | O(1) space
 def longestPalindromicSubstring(s):
-    print(s)
     n = len(s)
     if n == 1:
         return s[0]
@@ -13,7 +12,6 @@ def longestPalindromicSubstring(s):
             if (il < 0 or ir >= n) or s[il] != s[ir] :
                 if ir - il - 1 > maxlen:
                     maxstr = s[il+1:ir]
-                    print(f'l:{il+1}, r: {ir-1}; str: {maxstr}')
                     maxlen = ir - il -1
                 break
             il-=1
